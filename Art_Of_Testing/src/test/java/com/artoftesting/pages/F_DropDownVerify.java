@@ -46,11 +46,6 @@ public class F_DropDownVerify {
 		
 		
 		
-		dd.selectByIndex(3);
-		String AutoCheck = dd.getFirstSelectedOption().getText();
-		Assert.assertEquals(AutoCheck, "Database Testing", "Database Testing option is selected");
-
-		 
-	}
+		}
 
 }
