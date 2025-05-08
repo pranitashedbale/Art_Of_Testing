@@ -46,9 +46,9 @@ public class F_DropDownVerify {
 		
 		
 		
-		String AutoCheck = "Automation Testing";
-		dd.selectByValue(AutoCheck);
-		Assert.assertEquals(dd.getFirstSelectedOption().getText(), AutoCheck, "Automation Testing option is selected");
+		dd.selectByIndex(0);
+		String AutoCheck = dd.getFirstSelectedOption().getText();
+		Assert.assertEquals(AutoCheck, "Automation Testing", "Automation Testing option is selected");
 
 		 
 	}
